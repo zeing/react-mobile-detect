@@ -1,6 +1,6 @@
 # react-mobile-detect
 
-mobile detect device for react component 
+mobile detect device for react component
 implement from [react-device-detect](https://www.npmjs.com/package/react-device-detect) for my own work
 
 ## Installation
@@ -19,8 +19,16 @@ yarn add react-mobile-detect
 import {
   BrowserView, // Modify this
   MobileView, // Modify this
-  isMobile
+  DetectMobileContextProvider
 } from "react-mobile-detect";
+
+<BrowserView/>
+<MobileView/>
+
+<DetectMobileContextProvider><App/></DetectMobileContextProvider>
+
+const { isMobile } = useMobileDetect();
+
 ```
 
 ### for Next.js
